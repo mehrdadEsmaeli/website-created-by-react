@@ -1,0 +1,17 @@
+.footer-box-container{
+    border-top: 1px solid rgb(255, 255, 255, 20%);
+    padding: 1rem 0 ;
+}
+
+.footer-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer-box___socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}

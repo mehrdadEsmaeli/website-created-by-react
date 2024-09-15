@@ -1,0 +1,136 @@
+.header-main{
+    height: 800px;
+    background: linear-gradient( black 0%, #200D42 34%, #4F21A1 65%, #A46EDB 82%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.header-main__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    max-width: 800px;
+    text-align: center;
+    margin-top: -7rem;
+    position: relative;
+    z-index: 2;
+
+
+}
+
+.header-main__version{
+    color: rgb(255, 255, 255, 50%);
+    font-size: 1.4rem;
+    display: flex !important;
+    align-items: center !important;
+    gap: 1rem;
+    border: 1px solid #222222;
+    border-radius: 1.5rem;
+    padding: 0.3rem 1.6rem;
+
+}
+
+.header-main__vertion-link{
+    font-size: 1.4rem;
+    color: #ffff;
+}
+
+.header-main__title{
+    font-size: 165px;
+    line-height: 17rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.header-main__text{
+    font-size: 2.2rem;
+    max-width: 500px;
+    font-weight: 300;
+
+}
+
+.header-main__btns{
+    margin-top: 3rem;
+}
+
+.header-main__btn{
+    padding: 1.2rem 2rem !important;
+    border-radius: 1.3rem !important;
+    font-family: "vazir-bold";
+}
+
+
+.header-main__message-icon{
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    right: -10rem;
+    top: 10rem;
+}
+.message-icon{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-main__cursor-icon{
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    left: -10rem;
+    top: 25rem;
+}
+
+.header-main__circle{
+    position: absolute;
+    bottom: -34rem;
+    height: 500px;
+    width: 150%;
+    border-radius: 50%;
+    background: radial-gradient(black 50%, #9560EB 80%);
+    border: 1px solid #B48CDE;
+}
+
+
+
+
+@media screen and (max-width: 960px){
+    
+.header-main__title{
+    font-size: 10rem;
+    line-height: 10rem;
+}
+}
+
+@media screen and (max-width: 720px){
+    
+.header-main__title{
+    font-size: 7rem;
+    line-height: 10rem;
+    max-width: 50rem;
+}
+
+.header-main__message-icon,
+.header-main__cursor-icon{
+    display: none;
+}
+}
+@media screen and (max-width: 560px){
+    
+.header-main__title{
+    font-size: 4rem;
+    line-height: 5rem;
+    max-width: 30rem;
+}
+.header-main__text{
+    max-width: 37rem;
+}
+.header-main{
+    height: 595px;
+}
+}

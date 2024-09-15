@@ -1,0 +1,25 @@
+
+.info__box{
+    flex-basis: 30%;
+    background-color: #0D0D0D;
+    font-size: 1.8rem;
+    color: #ffff;
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 20%);
+    transition: all 250ms 150ms ease-out;
+}
+.info__box:hover{
+    background-color: #ffff;
+    color: black;
+    border: 1px solid rgba(255, 255, 255, 20%);
+    transform: scale(1.04);
+}
+
+.info__box-title{
+    margin: 2rem 0 0.8rem 0;
+}
+
+.info__box-text{
+    font-family: "vazir-reg";
+}

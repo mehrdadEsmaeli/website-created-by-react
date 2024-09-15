@@ -1,0 +1,85 @@
+.dashbord-container{
+    display: flex;
+    height: 100vh;
+    background-color: #e3f2fd;    ;
+
+}
+
+.dashbord-menus{
+    flex: 2;
+}
+.dashbord-content{
+    flex: 10;
+}
+
+
+.dashbord-menu{
+    padding: 2rem 1.5rem;
+    position: fixed;
+    top: 0rem;
+    width: 16%;
+    bottom: 0;
+    box-shadow: 0 0 1rem 0px rgb(0, 0, 0 , 33%);
+
+}
+
+
+.dashbord-menu-lists{
+    list-style: none;
+    
+}
+
+.dashbord-menu-li{
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+
+.user-d-header{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0.5em 3rem;
+}
+.user-d__profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.user-d__profile-img-div{
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.user-d__profile-img-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.user-d__search-div{
+
+}
+.user-d__search-div input{
+    outline: none;
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.4rem;
+    /* border: 0.5px solid black; */
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 80%);
+}
+
+.notfication-icon{
+
+}
+
+.dashbord-menu-li--activ{
+    background-color: rgba(0, 0, 0, 0.147);
+    border-radius: 1rem;
+}

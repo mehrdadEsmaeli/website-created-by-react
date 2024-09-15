@@ -1,0 +1,55 @@
+.info__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.info__titel-div {
+    max-width: 50rem;
+    color: #ffff;
+}
+
+.info__titel {
+    font-size: 5rem;
+}
+
+.info__text {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+
+/* box  */
+
+.info__boxs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+
+}
+
+.info__box{
+    min-width: 25rem;
+    flex-grow: 1;
+}
+
+
+
+
+@media screen and (max-width: 560px) {
+
+    .info__titel {
+        font-size: 3.5rem;
+    }
+
+    .info__text {
+        max-width: 37rem;
+
+    }
+    
+}

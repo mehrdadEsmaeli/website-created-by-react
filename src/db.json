@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "mehrdad",
+      "email": "mehrdad@gmail.com",
+      "password": "mehrdad"
+    },
+    {
+      "username": "alii",
+      "email": "ali@gmail.com",
+      "password": "aliali",
+      "id": 2
+    },
+    {
+      "username": "paria",
+      "email": "paria@gmai.con",
+      "password": "paria",
+      "id": 3
+    }
+  ]
+}

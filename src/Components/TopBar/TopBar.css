@@ -1,0 +1,20 @@
+.top-bar-div {
+    text-align: center;
+    padding: 1rem 0;
+    background: linear-gradient(to right,
+        #FEECFF 0%,
+        #FECAFF 12%,
+        #FEB5FF 27%,
+        #FFDBE7 40%,
+        #FFF4D6 49%,
+        #F3FCD7 50%,
+        #D2F5EE 71%,
+        #C3EFFF 84%,
+        #FBEFFF 100%);
+
+}
+
+.top-bar__title {
+    color: black;
+    font-size: 1.4rem;
+}

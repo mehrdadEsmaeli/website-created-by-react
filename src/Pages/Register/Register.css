@@ -1,0 +1,157 @@
+.register-main-container{
+    overflow: hidden;
+
+}
+
+.register-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #1a1a1a; */
+    padding: 3rem 2rem;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 1rem;
+    width: 45rem;
+    height: 35rem;
+    box-shadow: 0px 0px 25px -9px rgb(238, 238, 238);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+.register__input{
+    background: none;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    width: 70%;
+    border-radius: 1rem;
+    color: #fff;
+
+}
+.register__input::placeholder{
+    color: rgb(255, 255, 255, 80%);
+
+}
+
+.register__btn{
+    margin-top: 1.3rem;
+    margin-bottom: 0.8rem;
+    padding: 0.2rem 1rem;
+    border: none;
+    outline: none;
+}
+
+.register__btn-login{
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255, 60%);
+}
+.register__btn-login-span{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+/* .register-circle{
+    position: absolute;
+    width: 25rem ;
+    height: 25rem;
+    border-radius: 50%;
+    background-color: #4c9ee6;
+    right: 40rem;
+    top: 55%;
+    z-index: -1;
+} */
+.register-circle1{
+    position: absolute;
+    width: 25rem ;
+    height: 25rem;
+    border-radius: 50%;
+    background-color: #4c9ee6;
+    z-index: -1 !important;
+    margin-top: 20rem;
+    margin-left: 90rem;
+
+}
+.register-circle2{
+    position: absolute;
+    width: 15rem ;
+    height: 15rem;
+    border-radius: 50%;
+    background-color: #784ce6;
+    margin-top: 35rem ;
+    margin-left: 40rem ;
+    z-index: -1 !important;
+
+}
+.register-circle5{
+    position: absolute;
+    width: 15rem ;
+    height: 15rem;
+    border-radius: 50%;
+    background-color: #e64c4c;
+    margin-top: 40rem ;
+    margin-left: -10rem ;
+    z-index: -1 !important;
+
+}
+.register-circle3{
+    position: absolute;
+    width: 7.5rem ;
+    height: 7.5rem;
+    border-radius: 50%;
+    background-color: #4ce68f;
+    margin-top: 50rem ;
+    margin-left: 80rem ;
+    z-index: -1 !important;
+}
+.register-circle4{
+    position: absolute;
+    width: 20rem ;
+    height: 20rem;
+    border-radius: 50%;
+    background-color: #e6d44c;
+    margin-top: 5rem ;
+    margin-left: 25rem ;
+    z-index: -1 !important;
+}
+
+.register-error-ms{
+    color: red;
+    
+}
+
+.circle-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+
+}
+
+
+.background-div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    filter: brightness(0.4);
+}
+.background-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

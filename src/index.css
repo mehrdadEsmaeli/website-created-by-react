@@ -1,0 +1,68 @@
+:root {
+  --primeryColor: rgb(19, 19, 19);
+}
+
+
+@font-face {
+  font-family: "yekan";
+  src: url("./../public//Font/Far_Yekan.ttf");
+}
+@font-face {
+  font-family: "vazir-reg";
+  src: url("./../public//Font/Vazir-Regular.ttf");
+
+}
+@font-face {
+  font-family: "vazir-med";
+  src: url("./../public//Font/Vazir-Medium.ttf");
+}
+@font-face {
+  font-family: "vazir-light";
+  src: url("./../public//Font/Vazir-Light.ttf");
+}
+@font-face {
+  font-family: "vazir-bold";
+  src: url("./../public//Font/Vazir-Bold.ttf");
+}
+@font-face {
+  font-family: "vazir-black";
+  src: url("./../public//Font/Vazir-Black.ttf");
+}
+
+
+
+html{
+  font-size: 10px;
+  box-sizing: border-box;
+  direction: rtl;
+  scroll-behavior: smooth;
+  scrollbar-color: rgb(255, 255, 255) black;
+}
+
+
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "vazir-med";
+  font-size: 1.6rem;
+  background-color: black;
+  height: 100vh;
+
+}
+
+a{
+  text-decoration: none;
+  color: #ffff;
+
+}
+
+
+.swal2-modal{
+  font-size: unset;
+}
