@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import "./Faq.css";
+import Plans from '../Plans/Plans';
 
 
 function Faq() {
@@ -41,9 +42,9 @@ return (
         <div className="faq-container">
             <div className="faq-div">
                 <div className="faq-toggle ">
-                    <span className="faq-toggle__text">سوال ها</span>
-                    <div onClick={toggleHandler} className="faq-toggle__btn"></div>
                     <span className="faq-toggle__text">پلن ها</span>
+                    <div onClick={toggleHandler} className="faq-toggle__btn"></div>
+                    <span className="faq-toggle__text">سوال ها</span>
                 </div>
                 {toggle ? (
                     <>
@@ -53,9 +54,9 @@ return (
                                 return (
 
                                     <div key={question.id} className="faq__question-div">
-                                        <div className="faq__question">
+                                        <div onClick={() => { clickHandler(question.id) }} className="faq__question">
                                             <span className="faq__question-title">{question.question}</span>
-                                            <span onClick={() => { clickHandler(question.id) }} className="faq__question-icon">{questionId == question.id ? "-" : "+"}</span>
+                                            <span  className="faq__question-icon">{questionId == question.id ? "-" : "+"}</span>
                                         </div>
                                         <div className={`faq__question-answer ${questionId == question.id && "faq__question-answer--activ"}`}>
                                             <div className='faq__question-answer-box'>
@@ -69,7 +70,7 @@ return (
                     </>
                 ) : (
                     <>
-                        <div>plans</div>
+                        <Plans/>
                     </>
                 )}
             </div>

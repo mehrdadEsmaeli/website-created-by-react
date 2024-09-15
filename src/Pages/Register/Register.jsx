@@ -76,7 +76,7 @@ function Register() {
 
             </div>
 
-            <div id='scene' className="circle-container">
+            <div id='scene' data-friction-x="0.02" data-friction-y="01" data-scalar-x="30" data-scalar-y="5" className="circle-container">
                 <span data-depth="0.9" className="register-circle1"></span>
                 <span data-depth="0.5" className="register-circle2"></span>
                 <span data-depth="0.5" className="register-circle5"></span>
