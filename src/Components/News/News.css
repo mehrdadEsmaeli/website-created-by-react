@@ -1,6 +1,5 @@
 .news{
-    padding: 20rem 0 13rem 0;
-    margin-top: 6rem;
+    margin: 10rem 0;
     position: relative;
 }
 .news-container{
@@ -65,11 +64,5 @@
 
 @media screen and (max-width: 820px) {
     .news{
-        padding: 0;
-        margin-top: 63rem;
-        margin-bottom: 10rem;
-    }
-    .news__icons{
-        display: none;
     }
 }
