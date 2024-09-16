@@ -1,7 +1,7 @@
 /* helper */
 
-.btn{
-    background: linear-gradient(to right, black 50%, white 50%) ;
+.btn {
+    background: linear-gradient(to right, black 50%, white 50%);
     background-position: right;
     background-size: 200%;
     border-radius: 0.8rem;
@@ -11,12 +11,120 @@
     font-size: 1.7rem;
     transition: all 500ms 150ms ease-out;
 }
-.btn:hover{
+
+.btn:hover {
     color: white;
     background-position: left;
 
-    
+
 }
 
 /* helper */
 
+.ani {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: -15rem;
+    width: 100rem;
+    position: relative;
+}
+
+.circle {
+    width: 11rem;
+    height: 11rem;
+    background: rgb(131, 58, 180);
+    background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%,  rgba(69, 252, 219, 1) 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 12px white;
+}
+
+svg {
+    height: 100%;
+    width: 100%;
+
+}
+
+
+#svg1,#svg2,#svg3,#svg4{
+    position: absolute;
+
+    z-index: -1;
+}
+
+#svg1{
+    top: 30rem;
+    left: 20rem;
+    width: 200px;
+    height: 200px;
+}
+
+#svg2{
+    top: 50rem;
+    left: -10rem;
+    width: 100px;
+    height: 100px;
+}
+#svg3{
+    top: 100rem;
+    left: 50rem;
+    width: 150px;
+    height: 150px;
+}
+#svg4{
+    top: 120rem;
+    left: 70rem;
+    width: 165px;
+    height: 165px;
+}
+
+
+@media screen and (max-width: 800px){
+    .ani{
+        width:  90rem;
+        /* margin-right: -25rem; */
+    }
+    .circle{
+        width: 9rem;
+        height: 9rem;
+    }
+    #svg4{
+        left: 40rem;
+    }
+    #svg2{
+        left: 10rem;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .ani{
+        width:  60rem; 
+        /* margin-right: -35rem; */
+    }
+    .circle{
+        width: 6rem;
+        height: 6rem;
+    }
+    #svg4{
+        left: 30rem;
+    }
+    #svg3{
+        left: 20rem;
+    }
+}
+@media screen and (max-width: 375px){
+    .ani{
+        width:  50rem; 
+        /* margin-right: -35rem; */
+    }
+    .circle{
+        width: 5rem;
+        height: 5rem;
+    }
+    #svg4{
+        left: 5rem;
+    }
+    #svg3{
+        left: 10rem;
+    }
+}

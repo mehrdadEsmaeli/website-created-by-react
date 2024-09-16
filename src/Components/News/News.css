@@ -60,3 +60,9 @@
 }
 
 
+
+@media screen and (max-width: 375px){
+    .news__title{
+        font-size: 4rem;
+    }
+}
