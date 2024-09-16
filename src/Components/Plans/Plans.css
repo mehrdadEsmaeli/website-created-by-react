@@ -1,0 +1,63 @@
+.plans{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+.plan-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: black;
+    padding: 4rem;
+    border-radius: 2.4rem;
+    width: 30rem;
+    box-shadow: 0 0 5px 0px #ffffffa1;
+}
+.plan__title{
+    margin: 0 0 2rem 0;
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+.price-div{
+}
+.price-number{
+    font-size: 5.4rem;
+}
+.price-month{
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: 2rem;
+    
+}
+.plan-div-btn{
+    width: 100%;
+}
+.plan-btn{
+text-align: center;
+}
+.plan-options{
+    list-style: none;
+    text-align: left;
+}
+.plan-option{
+    margin-top: 4rem;
+    font-size: 1.4rem;
+}
+
+
+@media screen and (max-width: 1110px){
+    .plans{
+        flex-direction: column;
+    }
+    .plan{
+        margin-top: 3rem !important;
+    }
+    .plan-container{
+        width: 40rem;
+    }
+}
+@media screen and (max-width: 430px){
+    .plan-container{
+        width: 35rem;
+    }
+}
