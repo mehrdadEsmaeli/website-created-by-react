@@ -6,12 +6,13 @@ import { Link } from 'react-router-dom';
 import CloseIcon from '@mui/icons-material/Close';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import { useGSAP } from '@gsap/react';
 
 gsap.registerPlugin(ScrollTrigger);
 
 function NavBar() {
 
-    useEffect(()=>{
+    useGSAP(()=>{
         gsap.fromTo(".nav-bar-section > *",{
             scrollTrigger: ".nav-bar-section",
             y: 20,
@@ -22,7 +23,7 @@ function NavBar() {
             opacity:1,
             duration: 1,
         })
-    },[])
+    })
 
     let authLogin = useContext(AuthLogin);
     const [isMobileMenu, setIsMobileMenu] = useState(false);

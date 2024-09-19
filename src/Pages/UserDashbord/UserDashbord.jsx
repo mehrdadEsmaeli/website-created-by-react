@@ -4,9 +4,12 @@ import { Outlet } from 'react-router-dom';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import { useContext } from 'react';
 import AuthLogin from '../../Components/Contexs/loginContex';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 function UserDashbord() {
 
+    const [isShow, setIsShow] = useState(false);
     const [menuActiv, setMenuactiv] = useState("profile");
     const authLogin = useContext(AuthLogin);
 
@@ -14,12 +17,20 @@ function UserDashbord() {
         setMenuactiv(menuName);
     }
 
+    const menuClickHandler = ()=>{
+        setIsShow((prev)=> !prev)
+    }
+
     return (
         <>
             <div className="dashbord-container">
-                <div className="dashbord-menus">
-                    <div className="dashbord-menu">
+                <div className={`dashbord-menus`}>
+                    <div className={`dashbord-menu ${isShow && "dashbord-menu--activ"}`}>
                         <ul className="dashbord-menu-lists">
+                            <div className="close-icon-div">
+
+                                <CloseIcon onClick={menuClickHandler} sx={{ fontSize: 25 }} className='close-icon' />
+                            </div>
                             <li onClick={() => { clickHandler("profile") }} className={`dashbord-menu-li ${menuActiv == "profile" && "dashbord-menu-li--activ"} `}>پروفایل</li>
                             <li onClick={() => { clickHandler("bags") }} className={`dashbord-menu-li ${menuActiv == "bags" && "dashbord-menu-li--activ"} `}>سبد خرید</li>
                             <li onClick={() => { clickHandler("tikets") }} className={`dashbord-menu-li ${menuActiv == "tikets" && "dashbord-menu-li--activ"} `}>تیکت ها</li>
@@ -36,7 +47,9 @@ function UserDashbord() {
                             </div>
                         </div>
                         <div className="user-d__search-div">
+                            <MenuIcon onClick={menuClickHandler} sx={{ fontSize: 30 }} className='menu-icon' />
                             <input type="text" placeholder='جستجو...' />
+
                         </div>
                     </div>
                     <Outlet />

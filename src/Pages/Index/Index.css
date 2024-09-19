@@ -32,10 +32,14 @@
 .circle {
     width: 11rem;
     height: 11rem;
-    background: rgb(131, 58, 180);
-    background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%,  rgba(69, 252, 219, 1) 100%);
+    /* background: rgb(131, 58, 180); */
+    /* background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(69, 252, 219, 1) 100%); */
     border-radius: 50%;
     box-shadow: 0 0 12px white;
+    background-color: #21D4FD;
+    background-image: radial-gradient( #ffff 0%, #B721FF 100%);
+
+
 }
 
 svg {
@@ -45,86 +49,138 @@ svg {
 }
 
 
-#svg1,#svg2,#svg3,#svg4{
+#svg1,
+#svg2,
+#svg3,
+#svg4 {
     position: absolute;
 
     z-index: -1;
 }
 
-#svg1{
+#svg1 {
     top: 30rem;
     left: 20rem;
     width: 200px;
     height: 200px;
 }
 
-#svg2{
+#svg2 {
     top: 50rem;
     left: -10rem;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
-#svg3{
-    top: 100rem;
+
+#svg3 {
+    top: 50rem;
     left: 50rem;
     width: 150px;
     height: 150px;
 }
-#svg4{
-    top: 120rem;
+
+#svg4 {
+    top: 80rem;
     left: 70rem;
-    width: 165px;
-    height: 165px;
+    width: 70px;
+    height: 70px;
 }
 
 
-@media screen and (max-width: 800px){
-    .ani{
-        width:  90rem;
+@media screen and (max-width: 950px) {
+    #svg2 {
+        left: 10rem;
+    }
+
+}
+@media screen and (max-width: 850px) {
+    .ani {
+        width: 90rem;
         /* margin-right: -25rem; */
     }
-    .circle{
+
+    .circle {
         width: 9rem;
         height: 9rem;
     }
-    #svg4{
+
+    #svg4 {
         left: 40rem;
     }
-    #svg2{
+
+    #svg2 {
         left: 10rem;
     }
 
 }
 
-@media screen and (max-width: 500px){
-    .ani{
-        width:  60rem; 
+@media screen and (max-width: 750px) {
+    .ani {
+        width: 80rem;
+        /* margin-right: -35rem; */
+    }
+    .circle{
+        width: 8.5rem;
+        height: 8.5rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    .ani {
+        width: 70rem;
+        /* margin-right: -35rem; */
+    }
+    .circle{
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+}
+@media screen and (max-width: 540px) {
+    .ani {
+        width: 60rem;
+        /* margin-right: -35rem; */
+    }
+
+    .circle {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    #svg4 {
+        left: 30rem;
+    }
+
+    #svg3 {
+        left: 20rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .ani {
+        width: 55rem;
         /* margin-right: -35rem; */
     }
     .circle{
         width: 6rem;
         height: 6rem;
     }
-    #svg4{
-        left: 30rem;
-    }
-    #svg3{
-        left: 20rem;
-    }
 }
-@media screen and (max-width: 375px){
-    .ani{
-        width:  50rem; 
+
+@media screen and (max-width: 375px) {
+    .ani {
+        width: 47rem;
         /* margin-right: -35rem; */
     }
-    .circle{
+
+    .circle {
         width: 5rem;
         height: 5rem;
     }
-    #svg4{
+
+    #svg4 {
         left: 5rem;
     }
-    #svg3{
+
+    #svg3 {
         left: 10rem;
     }
 }

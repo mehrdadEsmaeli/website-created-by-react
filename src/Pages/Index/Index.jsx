@@ -28,20 +28,20 @@ function Index() {
         trigger: ".ani",
         scrub: 1.8,
         start: "top 80%",
-        end: "bottom 30%"
+        end: "bottom 50%"
       }
     })
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".ani",
-        scrub: 1.5,
+        scrub: 1.2,
         start: "top 50%",
       }
     });
-    tl.to("#svg1", {top: 20}, 0)
-      .to("#svg2", {top: 40}, 0.1)
-      .to("#svg3", {top: 80}, 0.1)
-      .to("#svg4", {top: 105}, 0.1)
+    tl.to("#svg1", {top: 0}, 0)
+      .to("#svg2", {top: 300}, 0)
+      .to("#svg3", {top: 200}, 0.1)
+      .to("#svg4", {top: 600}, 0.1)
   })
 
   return (
@@ -65,8 +65,8 @@ function Index() {
               r={332.483}
               gradientUnits="userSpaceOnUse"
             >
-              <stop offset={0} stopColor="#833ab4" />
-              <stop offset={1} stopColor="#1d8cfd" />
+              <stop offset={0} stopColor="#B721FF" />
+              <stop offset={1} stopColor="#ffff" />
             </radialGradient>
           </defs>
           <path
@@ -84,13 +84,13 @@ function Index() {
         <div className="background-ani-div">
           <svg id='svg1' viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <linearGradient id="a" x1={0} x2={1} y1={1} y2={0}>
-                <stop stopColor="rgba(248, 117, 55, 1)" offset="0%" />
-                <stop stopColor="rgba(251, 168, 31, 1)" offset="100%" />
+              <linearGradient id="a1" x1={0} x2={1} y1={1} y2={0}>
+                <stop stopColor="#B721FF" offset="0%" />
+                <stop stopColor="#ffff" offset="100%" />
               </linearGradient>
             </defs>
             <path
-              fill="url(#a)"
+              fill="url(#a1)"
               d="M22.1-25.6c6.5 4.8 11.7 11.7 14.6 20.3 2.9 8.6 3.5 18.7-1.3 24.4-4.9 5.6-15.2 6.8-24.9 10.6C.9 33.6-8.1 40.1-14 38.1c-5.9-2-8.8-12.7-11.8-21.5S-31.9.8-31.9-6.8c-.1-7.6 2.9-15.9 8.7-20.8 5.9-4.8 14.5-6.3 22.8-5.8 8.2.5 16 3 22.5 7.8z"
               transform="translate(50 50)"
               strokeWidth={0}
@@ -102,9 +102,9 @@ function Index() {
           </svg>
           <svg id='svg2' viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <linearGradient id="a" x1={0} x2={1} y1={1} y2={0}>
-                <stop stopColor="rgba(248, 117, 55, 1)" offset="0%" />
-                <stop stopColor="rgba(251, 168, 31, 1)" offset="100%" />
+              <linearGradient id="a2" x1={0} x2={1} y1={1} y2={0}>
+                <stop stopColor="#ffff" offset="0%" />
+                <stop stopColor="#B721FF" offset="100%" />
               </linearGradient>
             </defs>
             <path
@@ -114,18 +114,18 @@ function Index() {
               style={{
                 transition: ".3s"
               }}
-              stroke="url(#a)"
+              stroke="url(#a2)"
             />
           </svg>
           <svg id='svg3' viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <linearGradient id="a" x1={0} x2={1} y1={1} y2={0}>
-                <stop stopColor="rgba(248, 117, 55, 1)" offset="0%" />
-                <stop stopColor="rgba(251, 168, 31, 1)" offset="100%" />
+              <linearGradient id="a3" x1={0} x2={1} y1={1} y2={0}>
+                <stop stopColor="#ffff" offset="0%" />
+                <stop stopColor="#B721FF" offset="100%" />
               </linearGradient>
             </defs>
             <path
-              fill="url(#a)"
+              fill="url(#a3)"
               d="M22.1-25.6c6.5 4.8 11.7 11.7 14.6 20.3 2.9 8.6 3.5 18.7-1.3 24.4-4.9 5.6-15.2 6.8-24.9 10.6C.9 33.6-8.1 40.1-14 38.1c-5.9-2-8.8-12.7-11.8-21.5S-31.9.8-31.9-6.8c-.1-7.6 2.9-15.9 8.7-20.8 5.9-4.8 14.5-6.3 22.8-5.8 8.2.5 16 3 22.5 7.8z"
               transform="translate(50 50)"
               strokeWidth={0}
@@ -137,9 +137,9 @@ function Index() {
           </svg>
           <svg id='svg4' viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <linearGradient id="a" x1={0} x2={1} y1={1} y2={0}>
-                <stop stopColor="rgba(248, 117, 55, 1)" offset="0%" />
-                <stop stopColor="rgba(251, 168, 31, 1)" offset="100%" />
+              <linearGradient id="a4" x1={0} x2={1} y1={1} y2={0}>
+                <stop stopColor="#B721FF" offset="0%" />
+                <stop stopColor="#ffff" offset="100%" />
               </linearGradient>
             </defs>
             <path
@@ -149,7 +149,7 @@ function Index() {
               style={{
                 transition: ".3s"
               }}
-              stroke="url(#a)"
+              stroke="url(#a4)"
             />
           </svg>
         </div>

@@ -13,7 +13,7 @@ function Info() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".info",
-        start: "top 30%"
+        start: "top 75%"
       }
     })
 

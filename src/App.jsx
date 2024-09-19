@@ -16,12 +16,12 @@ function App() {
   const login = () => {
     setIsLogin(true);
     // setUserInfos("");
-    // localStorage.setItem("userToken", JSON.stringify(userData.id));
+    localStorage.setItem("userToken", JSON.stringify("login"));
   }
   const logOut = () => {
     setIsLogin(false);
     // setUserInfos();
-    // localStorage.removeItem("userToken");
+    localStorage.removeItem("userToken");
     navigate("/");
 
   }
@@ -29,34 +29,33 @@ function App() {
   let roter = useRoutes(routes);
 
 
-  // useEffect(() => {
-  //   let dataStorage = JSON.parse(localStorage.getItem("userToken"));
-  //   if (dataStorage) {
-  //     fetch(`http://localhost:3000/users/${dataStorage}`)
-  //       .then(res => {
-  //         if (res.ok) {
-  //           return res.json();
-  //         }
-  //       })
-  //       .then(data => {
-  //         login(data);
-  //       })
-  //   }
-  // }, [])
+  useEffect(() => {
+    let dataStorage = JSON.parse(localStorage.getItem("userToken"));
+    if (dataStorage) {
+      // fetch(`http://localhost:3000/users/${dataStorage}`)
+      //   .then(res => {
+      //     if (res.ok) {
+      //       return res.json();
+      //     }
+      //   })
+      //   .then(data => {
+      //     login(data);
+      //   })
+      login();
+    }
+  }, [])
 
 
   useEffect(() => {
-    setTimeout(() => {
-      serIsLoding(false);
+    serIsLoding(false);
 
-    }, 1000);
 
 
   }, [])
 
   return (
     <>
-    
+
       {isLoding ? (<div className="loader-div"><div className="loader"></div></div>) : (
 
         <AuthLogin.Provider value={{
